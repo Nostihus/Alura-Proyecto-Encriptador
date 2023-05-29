@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-image: url('../img/fondo.jpg');
+
+
+
+}
+
+/*************** contenido principal ***************/
+
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    background-color: rgba(137, 182, 253, 0.968);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+
+}
+
+/*************** sección de cifrado ***************/
+
+.logo {
+
+    margin-top: 10px;
+
+}
+
+
+
+/*************** Cuadro de texto (ingrese su texto aquí) ***************/
+
+textarea {
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #0A3871;
+    margin-top: 30px;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+
+
+/*************** Dentro del cuadro de texto (ingrese su texto aquí) ***************/
+
+#enc_txt {
+
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+
+/*************** Div (solo letras minúsculas y sin acento) ***************/
+
+
+.warning_paragraph {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.warning_text {
+
+    display: flex;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    margin-bottom: 16px;
+    margin-top: 150px;
+}
+
+
+/*************** Botones de cifrado y descifrado (cifrar/descifrar) ***************/
+
+
+button {
+
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+
+
+}
+
+button:hover {
+
+    opacity: 0.7;
+}
+
+#encrypt {
+
+    background: #0A3871;
+    color: #ffffff;
+    border: none;
+
+}
+
+#decrypt {
+
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    margin-left: 24px;
+
+}
+
+
+/*************** sección de descifrado ***************/
+
+
+.decrypt_container {
+
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+
+}
+
+/*************** imagen de títeres ***************/
+
+.img_container img {
+
+    padding-top: 60px;
+
+}
+
+/*************** H2 No se encontraron mensajes ***************/
+
+#message_h2 {
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*************** Tag : <p> Etiqueta Ingrese el mensaje que desea cifrar o descifrar ***************/
+
+.message_h2,
+#message_p {
+    text-align: center;
+}
+
+
+/*************** botón copiar ***************/
+
+#btn_copy {
+
+
+    display: none;
+    width: 300px;
+    height: 50px;
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+/*************** Footer ***************/
+
+footer {
+
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+
+span a {
+
+    color: #ffffff;
+}
+
+
+/*************** Responsividad ***************/
+
+
+@media (max-width: 1180px) {
+
+
+    textarea {
+
+        width: 60%;
+    }
+
+
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    #decrypt {
+
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    section {
+
+        padding: 10px;
+
+
+
+    }
+
+
+}
+
+/*************** 900 px  ***************/
+
+@media (max-width:900px) {
+
+
+
+    textarea {
+        margin-top: 40px;
+    }
+
+
+
+    .decrypt_container {
+
+
+
+        margin-bottom: 30px;
+        margin-top: 40px;
+
+        text-align: center;
+
+    }
+
+    .encrypted_field {
+
+        margin: auto;
+    }
+
+}
+
+/*************** 800 px ***************/
+
+@media (max-width: 800px) {
+
+    main {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .encrypt_section {
+
+        text-align: center;
+        align-items: center;
+    }
+
+    #encrypt {
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #decrypt {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .warning_text {
+
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+
+}
+
+/*************** 450 px ***************/
+
+@media (max-width: 450px) {
+
+    #enc_txt {
+
+        text-align: justify;
+    }
+
+    .decrypt_container {
+
+        width: 320px;
+
+    }
+
+
+    #btn_copy {
+
+        margin-left: -20px;
+        
+    }
+
+
+
+
+
+    .img_container img {
+
+        width: 200px;
+        margin-bottom: 40px;
+
+    }
+
+    footer {
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+
+}
