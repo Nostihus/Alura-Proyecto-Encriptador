@@ -37,7 +37,7 @@ La idea es reemplazar:
 Después de escribir el mensaje en la ubicación indicada y hacer clic en Cifrar, el mensaje aparece cifrado en el campo al lado.
 El carácter desaparece y aparece un botón Copiar justo debajo del mensaje.
 
-<img src="readme_img/cuarto.png" alt="exemplo imagem">
+<img src="readme_img/cuatro.png" alt="exemplo imagem">
 
 
 Si el usuario hace clic en Cifrar, sin ningún mensaje, aparece una alerta que le informa que debe escribir algo.
